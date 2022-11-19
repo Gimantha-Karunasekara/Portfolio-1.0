@@ -177,8 +177,31 @@ themeButton.addEventListener('click', () => {
 // Auto type title 
 
 var typed = new Typed(".auto-type",{
-    strings: ["Gimantha","a Undergraduate","a Software Engineer"],
+    strings: ["Undergraduate","Software Engineer"],
     typeSpeed: 100,
     backSpeed: 70,
     loop: true
 })
+
+// Form-SMTP Mail 
+
+function sendEmail(){
+
+    inputName = document.getElementById("contact__input-name").value;
+    inputEmail = document.getElementById("contact__input-email").value;
+    inputMsg = document.getElementById("contact__input-msg").value;
+
+    if (inputName != "" || inputEmail != "" || inputMsg != "" ) {
+        
+    }
+    console.log(inputName);
+    Email.send({ 
+        SecureToken: "0a5ae6fc-3a20-4ae3-9f59-3948b334c4bf",
+        To: "gimantha.contact@gmail.com",
+        From: "gimantha.contact@gmail.com",
+        Subject: "Portfolio site - Contact Enquiry",
+        Body: "Name:" + inputName + "<br> Email: " + inputEmail + "<br> Message: " + inputMsg 
+    }).then(message => alert("Message Sent Successfully"));
+}
+
+document.getElementById("contact-btn").addEventListener('click',sendEmail);

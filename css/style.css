@@ -93,6 +93,10 @@ body.dark-theme{
     color: var(--first-color);
 }
 
+.uil-sun:hover{
+    color: yellow;
+}
+
 body{
     margin: 0 0 var(--header-height) 0;
     font-family: 'Poppins', sans-serif;
@@ -199,7 +203,6 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
 
 }
 
@@ -303,7 +306,7 @@ img{
 
 .home__content{
     grid-template-columns: 0.5fr 3fr;
-    padding-top: 1rem;
+    padding-top: 3rem;
     align-items: center;
 }
 
@@ -421,7 +424,6 @@ img{
     width: 250px;
     border-radius: 0.5rem;
     justify-self: center;
-    align-self: center;
 }
 
 .about__description{
@@ -979,6 +981,10 @@ img{
         display: none;
     }
 
+    .nav__logo{
+        font-size: var(--h3-font-size);
+    }
+
     .nav__list{
         display: flex;
         column-gap: 2rem;
@@ -990,6 +996,7 @@ img{
 
     .change-theme{
         margin: 0;
+        margin-left: 1rem;
     }
 
     .home__container{
@@ -1031,7 +1038,7 @@ img{
     }
 
     .about__button{
-        justify-content: initial;
+        justify-content: center;
     }
 
     .qualification__tabs{
@@ -1075,6 +1082,9 @@ img{
 }
 
 @media screen and (min-width: 1024px){
+    .home__content{
+        padding-top: 5rem;
+    }
     .header,.main{
         padding: 0;
     }
@@ -1091,6 +1101,10 @@ img{
         width: 320px;
     }
 
+    .contact__img{
+        width: 300px;
+    }
+
     .home__social{
         transform: translateX(-6rem);
     }
@@ -1101,13 +1115,16 @@ img{
         /* display: flex; */
     }
 
+    .portfolio__container{
+        margin-inline: 2rem;
+    }
+
     .swiper-portfolio-icon{
         font-size: 3rem !important;
     }
 
     /* .swiper-button-prev{
         left: -1rem !important;
-        margin-left: 2rem;
     }
 
     .swiper-button-next{
@@ -1115,7 +1132,7 @@ img{
     } */
 
     .swiper-container-horizontal > .swiper-pagination-bullets{
-        bottom: -.4.5rem;
+        bottom: -4.5rem;
     }
 
     .contact__form{

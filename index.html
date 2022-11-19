@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
+    <title>Gimantha Karunasekara</title>
     <link href="./css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.0/css/line.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -87,10 +87,11 @@
                     </div>
 
                     <div class="home__data">
-                        <h1 class="home__title">I'am  <span class="auto-type"></span></h1>
-                        <h3 class="home__subtitle">Software Engineering Undergraduate</h3>
+                        <h1 class="home__title">Hi, I'am Gimantha</h1>
+                        <h3 class="home__subtitle"><span class="auto-type"></span></h3>
                         <p class="home__description">
-                           Undergraduate in Curtin Colombo University, pursuing a Software Engineering undergraduate degree.
+                           Software Engeneering Undergraduate in Curtin Colombo University. 
+                           Enthusiast in web development and mobile application development.
                         </p>
                         <a href="#contact" class="button button--flex">
                             Contact Me <i class="uil uil-envelope button__icon"></i>
@@ -118,14 +119,14 @@
             <span class="section__subtitle">My Introduction</span>
 
             <div class="about__container container grid">   
-                <img src="assets/img/1.svg" alt="" class="about__img">
+                <img src="assets/img/about.svg" alt="" class="about__img">
                 <div class="about__data">
                     <p class="about__description">
-                        I am currently enrolled as a student in Curtin Colombo University pursuing a Software Engineering undergraduate degree.
-                        I am interested in mobile application development, web application development  and 
-                        I am seeking exciting opportunities related to the same. I am always curious about new things and enjoy learning.
-                        I have ability to work with different people. Also I am very friendly and helpful person.
-                        I am looking forward to implementing and polishing my skills in any opportunity that I receive.
+                        I am Gimantha Karunasekara, a student in Curtin Colombo University pursuing a Software Engineering undergraduate degree.
+                        Would define my self as a very firndly and helpful person who have ability to work with different people. Seeking for
+                        opertunities and learning new things is what I enjoy.
+                        I am interested in mobile application development, web application development and related technologies.
+                        I am looking forward to refining my skills in any opportunity that I receive.
                     </p>
 
                     <div class="about__info">
@@ -363,7 +364,7 @@
                 <div class="swiper-wrapper">
     
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio/foodies.jpg" alt="" class="portfolio__img">
+                        <img src="assets/img/portfolio/foodies.svg" alt="" class="portfolio__img">
     
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Foodies</h3>
@@ -378,7 +379,7 @@
                     </div>
                      
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio/website.png" alt="" class="portfolio__img">
+                        <img src="assets/img/portfolio/website.svg" alt="" class="portfolio__img">
     
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Portfolio website</h3>
@@ -429,31 +430,31 @@
 
                             <div>
                                 <h3 class="contact__title">Email</h3>
-                                <span class="contact__subtitle">gimanthakarunasekra@gmail.com</span>
+                                <span class="contact__subtitle">gimantha.contact@gmail.com</span>
                             </div>
                         </div>
                         
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <form class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
+                                <input type="text" class="contact__input" id="contact__input-name">
                             </div>
 
                             <div class="contact__content">
                                 <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <input type="email" class="contact__input " id="contact__input-email">
                             </div>
 
                             <div class="contact__content">
                                 <label for="" class="contact__label">Message</label>
-                                <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                                <textarea name="" id="contact__input-msg" cols="0" rows="7" class="contact__input "></textarea>
                             </div>
                             
                             <div>
-                                <a href="#" class="button button--flex  contact__btn">
+                                <a type="submit" onclick="sendEmail()" class="button button--flex contact__btn" id="contact-btn">
                                     Send Message
                                     <i class="uil uil-message button__icon contact__btn-icon"></i>
                                 </a>
@@ -516,6 +517,7 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>
