@@ -204,4 +204,4 @@ function sendEmail(){
     }).then(message => alert("Message Sent Successfully"));
 }
 
-document.getElementById("contact-btn").addEventListener('click',sendEmail);
+// document.getElementById("contact-btn").addEventListener('click',sendEmail);
