@@ -306,7 +306,7 @@ img{
 
 .home__content{
     grid-template-columns: 0.5fr 3fr;
-    padding-top: 3rem;
+    padding-top: 2rem;
     align-items: center;
 }
 
@@ -1004,7 +1004,6 @@ img{
     }
 
     .home__content{
-        padding-top: 5.5rem;
         column-gap: 2rem;
     }
 
@@ -1083,7 +1082,7 @@ img{
 
 @media screen and (min-width: 1024px){
     .home__content{
-        padding-top: 5rem;
+        padding-top: 6rem;
     }
     .header,.main{
         padding: 0;
