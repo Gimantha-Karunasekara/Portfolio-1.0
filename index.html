@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
     <link href="./css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.0/css/line.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
   </head>
   <body>
@@ -16,8 +16,8 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
-                            <i class="uil uil-estate nav__icon"></i> Home
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-home nav__icon"></i> Home
                         </a>
                     </li>
                     <li class="nav__item">
@@ -50,6 +50,9 @@
             </div>
 
             <div class="nav__btns">
+
+                <i class="uil uil-moon change-theme" id="theme-button"></i>                
+
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-bars"></i>
                 </div>
@@ -80,11 +83,11 @@
                     </div>
 
                     <div class="home__img">
-                        <img src="./assets/img/home.svg" alt="" class="home__img">
+                        <img src="./assets/img/home.svg" alt="" class="home__img" id="home-img">
                     </div>
 
                     <div class="home__data">
-                        <h1 class="home__title">Hi, I'am Gimantha</h1>
+                        <h1 class="home__title">I'am  <span class="auto-type"></span></h1>
                         <h3 class="home__subtitle">Software Engineering Undergraduate</h3>
                         <p class="home__description">
                            Undergraduate in Curtin Colombo University, pursuing a Software Engineering undergraduate degree.
@@ -408,7 +411,7 @@
             <h2 class="section__title contact__section-title">Contact Me</h2>
             <span class="section__subtitle contact__section-subtiitle">Get in touch</span>
             <div class="grid">
-                <img src="assets/img/contact.svg" alt="" class="contact__img">
+                <img src="assets/img/contact.svg" alt="" class="contact__img" id="contact-img">
             </div>
                 <div class="contact__container container grid">
                     <div>
@@ -511,6 +514,7 @@
         </footer>
 
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="/js/main.js"></script>
   </body>
