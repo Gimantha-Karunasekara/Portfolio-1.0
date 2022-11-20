@@ -52,6 +52,13 @@ html{
 
 }
 
+/* fade animation  */
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 @media screen and (min-width: 968px){
     :root {
         --big-font-size: 3rem;
@@ -104,7 +111,7 @@ body{
     background-color: var(--body-color);
     transition: backgroud .2s ease-in;
     color: var(--text-color);
-
+    animation: fadeIn 2s;
     
 }
 
@@ -290,14 +297,10 @@ img{
 }
 /* Home */
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+
 
 .home{
     margin-bottom: 5rem;
-    animation: fadeIn 2s;
 }
 
 .home_container{
