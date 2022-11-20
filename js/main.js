@@ -203,5 +203,3 @@ function sendEmail(){
         Body: "Name: " + inputName + "<br><br> Email: " + inputEmail + "<br><br> Message: " + inputMsg 
     }).then(message => alert("Message Sent Successfully"));
 }
-
-document.getElementById("contact-btn").addEventListener('click',sendEmail);
