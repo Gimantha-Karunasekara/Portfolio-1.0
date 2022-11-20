@@ -196,12 +196,12 @@ function sendEmail(){
     }
     console.log(inputName);
     Email.send({ 
-        SecureToken: "0a5ae6fc-3a20-4ae3-9f59-3948b334c4bf",
+        SecureToken: "f8686d97-8b2d-45b7-95e0-f02334b06aec",
         To: "gimantha.contact@gmail.com",
-        From: "gimantha.contact@gmail.com",
+        From: "gimantha.me@outlook.com",
         Subject: "Portfolio site - Contact Enquiry",
         Body: "Name:" + inputName + "<br> Email: " + inputEmail + "<br> Message: " + inputMsg 
     }).then(message => alert("Message Sent Successfully"));
 }
 
-// document.getElementById("contact-btn").addEventListener('click',sendEmail);
+document.getElementById("contact-btn").addEventListener('click',sendEmail);
