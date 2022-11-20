@@ -200,7 +200,7 @@ function sendEmail(){
         To: "gimantha.contact@gmail.com",
         From: "gimantha.me@outlook.com",
         Subject: "Portfolio site - Contact Enquiry",
-        Body: "Name:" + inputName + "<br> Email: " + inputEmail + "<br> Message: " + inputMsg 
+        Body: "Name: " + inputName + "<br><br> Email: " + inputEmail + "<br><br> Message: " + inputMsg 
     }).then(message => alert("Message Sent Successfully"));
 }
 
