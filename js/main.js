@@ -204,7 +204,7 @@ function sendEmail(){
                 From: "gimantha.me@outlook.com",
                 Subject: "Portfolio site - Contact Enquiry",
                 Body: "Name: " + inputName + "<br><br> Email: " + inputEmail + "<br><br> Message: " + inputMsg 
-            }).then(toast("success")).else(toast("error"));           
+            }).then(toast("success"));           
         } catch (error) {
             console.log("Error: "+error);
             toast("error");
