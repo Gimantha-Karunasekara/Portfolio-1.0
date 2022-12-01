@@ -204,10 +204,70 @@ function sendEmail(){
                 From: "gimantha.me@outlook.com",
                 Subject: "Portfolio site - Contact Enquiry",
                 Body: "Name: " + inputName + "<br><br> Email: " + inputEmail + "<br><br> Message: " + inputMsg 
-            }).then(message => alert("Message Sent Successfully"));           
+            }).then(toast("success")).else(toast("error"));           
         } catch (error) {
-            console.log("Error: "+error)
+            console.log("Error: "+error);
+            toast("error");
         }
         
     }
 }
+
+function toast(choice)
+{
+    if (choice == "success") {
+        if (window.screen.availWidth > 1000) {
+            
+            Toastify({
+                text: "Message sent successfully !",
+                className: "toastify-rounded",
+                close: true,
+                style: {
+                  background: "#6e57e0",
+                }
+              }).showToast();
+        }
+        else
+        {
+            Toastify({
+                text: "Message sent successfully !",
+                className: "toastify-rounded",
+                position: "center",
+                close: true,
+                style: {
+                  background: "#6e57e0",
+                }
+              }).showToast();
+        }
+
+    }
+    else if(choice == "error")
+    {
+        if (window.screen.availWidth > 1000) {
+            Toastify({
+                text: "Unexpected error occured !",
+                className: "toastify-rounded",
+                close: true,
+                style: {
+                    background: "#ef233c",
+                  }
+                }).showToast();
+        }
+        else{
+            Toastify({
+                text: "Unexpected error occured !",
+                className: "toastify-rounded",
+                close: true,
+                position: "center",
+                style: {
+                    background: "#ef233c",
+                  }
+                }).showToast();
+        }
+        
+    }
+}
+
+
+
+

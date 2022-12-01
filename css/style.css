@@ -904,7 +904,9 @@ img{
         gap: 0.5rem;
     }
 
-    
+    .toastify{
+        width: 100% !important;
+    }
 }
 /* medium devices  */
 
@@ -1148,4 +1150,9 @@ img{
     .contact__container{
         column-gap: 3rem;
     }
+}
+
+/* rounded corners toast */
+.toastify-rounded{
+    border-radius: 0.5rem !important;
 }
