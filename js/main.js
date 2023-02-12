@@ -199,9 +199,9 @@ function sendEmail(){
     {
         try {
             Email.send({ 
-                SecureToken: "f8686d97-8b2d-45b7-95e0-f02334b06aec",
-                To: "gimantha.contact@gmail.com",
-                From: "gimantha.me@outlook.com",
+                SecureToken: "KEY",
+                To: "EMAIL",
+                From: "EMAIL",
                 Subject: "Portfolio site - Contact Enquiry",
                 Body: "Name: " + inputName + "<br><br> Email: " + inputEmail + "<br><br> Message: " + inputMsg 
             }).then(toast("success"));           
